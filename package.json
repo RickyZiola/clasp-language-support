@@ -1,0 +1,25 @@
+{
+  "name": "clasp-language-support",
+  "displayName": "Clasp Language Support",
+  "description": "Syntax highlighting for the Clasp programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "csp",
+      "aliases": ["Clasp", "csp"],
+      "extensions": [".csp",".clasp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "csp",
+      "scopeName": "main.csp",
+      "path": "./syntaxes/csp.tmLanguage.json"
+    }]
+  }
+}
